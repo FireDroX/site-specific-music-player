@@ -1,5 +1,12 @@
 # Site-Specific Music Player Chrome Extension
 
+</br>
+
+[![ChromeAPI][ChromeAPI]][ChromeAPI-url]
+[![contributors][contributors-shield]][contributors-url]
+[![stars][stars-icon]][stars-url]
+[![Discord][discord-icon]][discord-url]
+
 ## Description
 
 This Chrome extension allows you to play specific music when you visit certain websites. You can choose from a predefined list of music tracks or enter a custom YouTube URL. When you visit the specified website, the chosen music will automatically play in the background. You can also stop the music using a button in the extension popup.
@@ -100,3 +107,12 @@ Contributions are welcome! Please open an issue or submit a pull request with an
 FireDroX - [GitHub Profile](https://github.com/FireDroX)\
 CSS Colors - [Realtime Colors](https://www.realtimecolors.com/?colors=13141b-f2f3f7-31375e-858ac7-4753b8&fonts=Inter-Inter)\
 Original Idea - Wii Shop Music for Amazon.com (extension)
+
+[ChromeAPI]: https://img.shields.io/badge/chrome%20api-20232A?style=for-the-badge&logo=googlechrome&logoColor=4285F4&colorB=555
+[ChromeAPI-url]: https://developer.chrome.com/docs/extensions/reference
+[contributors-shield]: https://img.shields.io/github/contributors/firedrox/site-specific-music-player.svg?style=for-the-badge
+[contributors-url]: https://github.com/FireDroX/site-specific-music-player/graphs/contributors
+[stars-icon]: https://img.shields.io/github/stars/firedrox/site-specific-music-player.svg?style=for-the-badge
+[stars-url]: https://github.com/FireDroX/site-specific-music-player/stargazers
+[discord-icon]: https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&colorB=555
+[discord-url]: https://discord.gg/Zmmqd9Tbnn
