@@ -14,17 +14,22 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 function playMusic(musicUrl) {
   const videoId = getYouTubeVideoId(musicUrl);
   if (videoId) {
-    const player = document.createElement("iframe");
-    player.id = "musicPlayer";
-    player.setAttribute(
-      "src",
-      `https://www.youtube.com/embed/${videoId}?autoplay=1&loop=1&playlist=${videoId}`
-    );
-    player.allow =
-      "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+    let player = document.getElementById("musicPlayer");
+    if (!player) {
+      player = document.createElement("iframe");
+      player.id = "musicPlayer";
+      player.setAttribute(
+        "src",
+        `https://www.youtube.com/embed/${videoId}?autoplay=1&loop=1&playlist=${videoId}`
+      );
+      player.allow =
+        "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
 
-    player.style.display = "none";
-    document.body.appendChild(player);
+      player.style.display = "none";
+      document.body.appendChild(player);
+    } else {
+      console.log("Music player already exists.");
+    }
   } else {
     console.log("Invalid YouTube URL:", musicUrl);
   }
