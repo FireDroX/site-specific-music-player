@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Site-Specific Music Player",
+  "version": "0.1.0",
+  "description": "Plays different music when a certain site is loaded.",
+  "permissions": ["tabs", "activeTab", "storage", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "icons/icon32.png",
+      "48": "icons/icon32.png",
+      "128": "icons/icon32.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon32.png",
+    "48": "icons/icon32.png",
+    "128": "icons/icon32.png"
+  }
+}

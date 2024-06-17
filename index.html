@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Site-Specific Music Player</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 10px;
+        width: 300px;
+      }
+      select,
+      button,
+      input {
+        width: 100%;
+        margin: 5px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Choose Music for Site</h2>
+    <label for="site">Site URL:</label>
+    <input type="text" id="site" placeholder="e.g., https://www.amazon.fr/" />
+
+    <label for="music">Select Music:</label>
+    <select id="music">
+      <option value="https://www.youtube.com/watch?v=yyjUmv1gJEg">
+        Wii Shop
+      </option>
+      <option value="https://www.youtube.com/watch?v=lttQ47yZ-5A">
+        DSi Shop
+      </option>
+      <option value="https://www.youtube.com/watch?v=o5xykMvJejk">
+        Ocarina of Time - Shop
+      </option>
+      <option value="https://www.youtube.com/watch?v=yaYBy0Jc7BA">
+        Twilight Princess - Malo Mart
+      </option>
+      <option value="https://www.youtube.com/watch?v=oM6jMvEz81s">
+        Terry's Shop
+      </option>
+      <option value="https://www.youtube.com/watch?v=-iULUmXwp3Q">
+        Ravio's Shop
+      </option>
+      <option value="https://www.youtube.com/watch?v=luZA3xUcE50">
+        Madame Couture's Shop
+      </option>
+    </select>
+
+    <label for="customUrl">Or enter a custom URL:</label>
+    <input
+      type="text"
+      id="customUrl"
+      placeholder="e.g., https://www.youtube.com/watch?v=example"
+    />
+
+    <button id="save">Save</button>
+    <button id="stop">Stop Music</button>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
