@@ -2,7 +2,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   if (message.action === "playMusic") {
     const musicUrl = message.musicUrl;
     playMusic(musicUrl);
-    console.log("Starting: " + musicUrl);
+    console.log("Starting background music: " + musicUrl);
     sendResponse("Music started");
   } else if (message.action === "stopMusic") {
     stopMusic();

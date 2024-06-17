@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Site-Specific Music Player",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Plays different music when a certain site is loaded.",
   "permissions": ["tabs", "activeTab", "storage", "scripting"],
   "background": {

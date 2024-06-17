@@ -95,6 +95,8 @@ This project is licensed under the MIT License.
 
 Contributions are welcome! Please open an issue or submit a pull request with any improvements or bug fixes.
 
-## Author
+## Others
 
-FireDroX - [GitHub Profile](https://github.com/FireDroX)
+FireDroX - [GitHub Profile](https://github.com/FireDroX)\
+CSS Colors - [Realtime Colors](https://www.realtimecolors.com/?colors=13141b-f2f3f7-31375e-858ac7-4753b8&fonts=Inter-Inter)\
+Original Idea - Wii Shop Music for Amazon.com (extension)
